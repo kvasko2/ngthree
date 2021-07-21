@@ -1,0 +1,14 @@
+<ngthree-orbit-controls>
+  <ngthree-renderer>
+    <ngthree-perspective-camera [fov]="60" [near]="0.1" [far]="1000" [position]="[0, 0, -10]"></ngthree-perspective-camera>
+    <ngthree-scene>
+      <ngthree-ambient-light color="#333333"></ngthree-ambient-light>
+      <ngthree-point-light color="#FFFFFF" [position]="[0, 6, 0]" [showHelper]="true"></ngthree-point-light>
+      <ngthree-mesh>
+        <ngthree-sphere [radius]="5"></ngthree-sphere>
+        <ngthree-material color="#FFAA00"></ngthree-material>
+      </ngthree-mesh>
+      <ngthree-gltf-model path="assets/models/gltf/shenron_dragon_ball/scene.gltf"></ngthree-gltf-model>
+    </ngthree-scene>
+  </ngthree-renderer>
+</ngthree-orbit-controls>
